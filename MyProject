@@ -1,3 +1,16 @@
-So for my project i'd like to create a graph, for a lot of fantasy sports sites there are a ton of stats except it really only shows 
-the numbers, id like to create a webservice that makes a graph of two data sets entered into it. So like you enter two labels 
-and two sets of data. then on the map it creates a picture of what the data looks like.
+My Project is Going to be a site that compares the stats of your recent league of legends games against the friends in you lobby.
+using th match history API from riot games.
+It's going to allow friends to compare and contrast their recent games at ease and be a great competitive dashboard to play 
+against the stats of your friends.
+
+week 1
+  [ x ] came up with the Idea for my project.
+week 2
+  [ x ] created a Wireframe base of what my project should look like.
+week 3
+  [ x ] created a base for what the data base should look like for my project.
+week 4
+  [ ] begin designing the HTMl of the project.
+  [ ] first servlets of the project
+  [ ] create the database.
+  [ ] set it all up on intelij
