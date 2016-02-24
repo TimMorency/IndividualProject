@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="leagueGroupUser" table="leaguegroupuser"
+            schema="sample">
+        <meta attribute="class-description">
+            This class contains the league group user.
+        </meta>
+        <id name="userId" type="int" column="UserId">
+            <generator class="native"/>
+        </id>
+        <property name="userName" column="UserName" type="string"/>
+        <property name="summonerName" column="SummonerName" type="string"/>
+        <property name="email" column="Email" type="string"/>
+        <property name="password" column="Password" type="string"/>
+    </class>
+</hibernate-mapping>

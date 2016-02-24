@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="web:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/web_war_exploded</output-path>
+    <root id="archive" name="web_war exploded.war">
+      <element id="javaee-facet-resources" facet="LeagueGroups/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="LeagueGroups" />
+          <element id="dir-copy" path="$PROJECT_DIR$/lib" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="mysql-connector-java-5.1.35-bin" />
+          <element id="library" level="application" name="log4j" />
+          <element id="library" level="project" name="Hibernate 4.2.2-4.2.2" />
+          <element id="library" level="application" name="geronimo-osgi-locator-1.0" />
+          <element id="library" level="application" name="groovy-all-2.3.9" />
+          <element id="library" level="application" name="antlr-2.7.7" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

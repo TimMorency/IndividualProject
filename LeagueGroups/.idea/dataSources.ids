@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - sample@localhost" uuid="27298c35-1c55-4567-83ad-acd67583c694">
+    <database-info product="MySQL" version="5.7.10-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="sample"/>
+      <table id="2" parent="1" name="employees"/>
+      <table id="3" parent="1" name="leaguegroupuser"/>
+      <table id="4" parent="1" name="roles"/>
+      <column id="5" parent="2" name="emp_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="6" parent="2" name="first_name">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="7" parent="2" name="last_name">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="8" parent="2" name="ssn">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="9" parent="2" name="dept">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="10" parent="2" name="room">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="11" parent="2" name="phone">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <key id="12" parent="2" name="PRIMARY">
+        <columns>emp_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="13" parent="3" name="UserId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="14" parent="3" name="UserName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="15" parent="3" name="SummonerName">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="16" parent="3" name="Email">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="17" parent="3" name="Password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <key id="18" parent="3" name="PRIMARY">
+        <columns>UserId</columns>
+        <primary>1</primary>
+      </key>
+      <column id="19" parent="4" name="UserId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="20" parent="4" name="RoleName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <index id="21" parent="4" name="Roles_leaguegroupuser_UserId_fk">
+        <columns>UserId</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="22" parent="4" name="PRIMARY">
+        <columns>RoleName</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="23" parent="4" name="Roles_leaguegroupuser_UserId_fk">
+        <columns>UserId</columns>
+        <ref-key>~.leaguegroupuser.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+    </database-model>
+  </data-source>
+</component>
